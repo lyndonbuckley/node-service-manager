@@ -1,4 +1,4 @@
-export type ServiceCallback = () => Promise<boolean>;
+export type ServiceCallback = () => Promise<void> | Promise<boolean> | boolean | void;
 
 export enum ServiceStatus {
     Init = "init",
