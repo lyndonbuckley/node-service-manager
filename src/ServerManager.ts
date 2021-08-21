@@ -1,7 +1,7 @@
 import {ServiceCallback, ServiceManager, ServiceStatus} from "./ServiceManager";
 import {IncomingMessage, ServerResponse} from "http";
 import {HTTPServer} from "./HTTPServer";
-import {HealthCheck} from "./HealthCheck";
+import {HealthCheck, HealthCheckCallback} from "./HealthCheck";
 
 //const server = http.createServer(app.callback());
 // server.listen(8080, '0.0.0.0',() => {
@@ -32,7 +32,7 @@ export class ServerManager extends ServiceManager {
         return server;
     }
 
-    healthCheck(name: string, callback: ServiceCallback) {
+    healthCheck(name: string, callback: HealthCheckCallback) {
         const healthCheck = new HealthCheck(this, callback)
         this._healthChecks[name] = healthCheck
         return healthCheck;
