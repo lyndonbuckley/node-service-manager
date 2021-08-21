@@ -12,7 +12,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lyndonbuckley/node-service-manager.git"
+    "url": "git+https://github.com/lyndonbuckley/node-service-manager.git",
+    "directory": "lib"
   },
   "author": "Lyndon Buckley <git@lyndonbuckley.com>",
   "license": "ISC",
