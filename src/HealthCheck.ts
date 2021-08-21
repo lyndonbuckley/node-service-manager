@@ -1,6 +1,6 @@
 import {ServiceManager} from "./ServiceManager";
 
-export type HealthCheckCallback = () => Promise<boolean>;
+export type HealthCheckCallback = () => Promise<boolean> | boolean;
 export class HealthCheck {
 
     healthy: boolean = false;
