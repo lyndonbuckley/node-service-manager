@@ -1,0 +1,19 @@
+{
+  "name": "node-service-manager",
+  "version": "0.1.0",
+  "description": "Node.js Service management with graceful startup/shutdown and built-in helath checks",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyndonbuckley/node-service-manager.git"
+  },
+  "author": "Lyndon Buckley <git@lyndonbuckley.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyndonbuckley/node-service-manager/issues"
+  },
+  "homepage": "https://github.com/lyndonbuckley/node-service-manager#readme"
+}
